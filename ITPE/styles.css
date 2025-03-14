@@ -1,0 +1,170 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body Styling */
+body {
+    font-family: 'Helvetica', sans-serif;
+    background-color: #fafafa;
+    color: #333;
+    line-height: 1.6;
+    padding: 0;
+    margin: 0;
+}
+
+/* Header Styling */
+header {
+    background-color: #000;
+    color: white;
+    padding: 80px 20px;
+    text-align: center;
+    position: relative;
+}
+
+header h1 {
+    font-size: 3.5rem;
+    font-weight: 700;
+    letter-spacing: 2px;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+}
+
+header p {
+    font-size: 1.2rem;
+    font-weight: 300;
+}
+
+/* Main Container */
+.main-container {
+    width: 85%;
+    margin: auto;
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+
+h2 {
+    font-size: 2rem;
+    text-align: center;
+    margin-bottom: 50px;
+    font-weight: 600;
+    color: #333;
+}
+
+/* Vinyl Collection Styling */
+.vinyl-collection {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 30px;
+    justify-items: center;
+}
+
+/* Vinyl Item Styling */
+.vinyl-item {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    width: 100%;
+    max-width: 270px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.vinyl-item:hover {
+    transform: scale(1.03);
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.15);
+}
+
+.vinyl-item img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    transition: transform 0.4s ease;
+    border-bottom: 3px solid #f5f5f5;
+}
+
+.vinyl-item img:hover {
+    transform: scale(1.05);
+}
+
+.vinyl-item .details {
+    padding: 20px;
+    text-align: center;
+}
+
+.vinyl-item h3 {
+    font-size: 1.6rem;
+    color: #333;
+    margin-bottom: 10px;
+    font-weight: 700;
+}
+
+.vinyl-item p {
+    font-size: 1.1rem;
+    color: #777;
+    margin-bottom: 20px;
+    font-weight: 300;
+}
+
+.vinyl-item button {
+    background-color: #d35400;
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    font-size: 1.1rem;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+    font-weight: 500;
+}
+
+.vinyl-item button:hover {
+    background-color: #e67e22;
+}
+
+/* Footer Styling */
+footer {
+    background-color: #000;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    position: relative;
+    width: 100%;
+    margin-top: 40px;
+}
+
+footer p {
+    font-size: 0.9rem;
+    letter-spacing: 1px;
+    font-weight: 300;
+}
+
+/* Responsive Design for smaller screens */
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 2.8rem;
+    }
+
+    header p {
+        font-size: 1rem;
+    }
+
+    .vinyl-item {
+        max-width: 230px;
+    }
+
+    .vinyl-collection {
+        gap: 20px;
+    }
+
+    h2 {
+        font-size: 1.8rem;
+    }
+
+    footer p {
+        font-size: 0.8rem;
+    }
+}
+
